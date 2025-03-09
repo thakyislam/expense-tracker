@@ -16,40 +16,59 @@ Clone the repository to your local machine:
 ```bash
 git clone https://github.com/thakyislam/expense-tracker.git
 cd expense-tracker
+```
 
 2. Install Dependencies
-Install the required dependencies using Composer:
+   Install the required dependencies using Composer:
+
+```bash
 composer install
+```
 
 3. Set Up the .env File
-Create a .env file by copying the example .env.example:
-cp .env.example .env
+   Create a .env file by copying the example .env.example:
+
+```bash
+   cp .env.example .env
+```
 
 Update the database settings in the .env file with your local or remote database credentials. Example:
 
+```bash
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=expense_tracker
 DB_USERNAME=root
 DB_PASSWORD=
+```
 
 4. Generate the Application Key
-Generate the application key:
-php artisan key:generate
+   Generate the application key:
+
+```bash
+   php artisan key:generate
+```
 
 5. Run Migrations
-Run the migrations to create the necessary tables in your database:
-php artisan migrate
+   Run the migrations to create the necessary tables in your database:
+
+```bash
+   php artisan migrate
+```
 
 6. Seed the Database (Optional)
-If you'd like to populate your database with sample data, you can run the seeders:
-php artisan db:seed
+   If you'd like to populate your database with sample data, you can run the seeders:
+
+```bash
+   php artisan db:seed
+```
 
 7. Start the Development Server
-Now, you can start the Laravel development server:
-php artisan serve
+   Now, you can start the Laravel development server:
 
+```bash
+   php artisan serve
+```
 
 You can access the application at http://localhost:8000.
-```
